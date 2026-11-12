@@ -200,3 +200,9 @@ ul.todo input:checked + span { color:var(--muted); text-decoration:line-through;
 .spot ul { margin:8px 0 0; padding-left:1.1em; }
 .spot li { margin:.35em 0; }
 .list-group-title.suggest { color:var(--b); }
+
+.route { margin:8px 0 0; font-size:.9rem; background:var(--surface); border:1px dashed var(--b); border-radius:8px; padding:8px 10px; }
+.route em { font-style:normal; font-weight:600; color:var(--b); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .route em { color:#8fb7d1; } }
+:root[data-theme="dark"] .route em { color:#8fb7d1; }
+@media print { .route { border-color:#000; } .route em { color:#000; } }
