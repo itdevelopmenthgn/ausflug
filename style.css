@@ -337,3 +337,9 @@ details.plist[open] > summary::after { transform: rotate(45deg); }
 /* Listen ohne Einrückung innerhalb von Karten */
 .card ul.chips, .card ul.people, .card ul.plain, .card ul.todo, .card ul.factbox, .card ul.kid-facts { padding-left: 0; }
 .card ul.chips li, .card ul.people li { margin: 0; }
+
+/* Orts-Links im Zeitplan + Sprungziel */
+.timeline a.pl { color: inherit; text-decoration: underline dotted var(--terra); text-underline-offset: 3px; }
+.timeline a.pl:hover { color: var(--terra); }
+[id] { scroll-margin-top: 90px; }
+section:target, li:target, h3:target, .card:target { background: var(--sun-soft); border-radius: 12px; box-shadow: 0 0 0 6px var(--sun-soft); }
