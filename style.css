@@ -206,3 +206,8 @@ ul.todo input:checked + span { color:var(--muted); text-decoration:line-through;
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .route em { color:#8fb7d1; } }
 :root[data-theme="dark"] .route em { color:#8fb7d1; }
 @media print { .route { border-color:#000; } .route em { color:#000; } }
+
+ul.todo.cols { columns: 2 240px; column-gap: 24px; }
+ul.todo.cols li { break-inside: avoid; }
+ul.todo.cols li label { padding: 5px 0; }
+.card a, .todo a { color: var(--brand); }
