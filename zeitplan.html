@@ -4,490 +4,177 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rom-Zeitplan</title>
-  <meta name="description" content="Tagesplan für die Familienreise nach Rom vom 27.12. bis 05.01. mit Fixpunkten, lockeren Tagen und kostenlosen bzw. unbekannteren Zielen.">
+  <meta name="description" content="Tagesplan für die Familienreise nach Rom mit Abfahrtszeiten, Buslinien und Einkaufspuffern.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Nunito:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%93%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🗓%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-  <header class="hero">
+  <header class="topbar">
     <div class="wrap">
-      <p class="eyebrow"><a class="back" href="index.html">← Rom im Winter</a></p>
-      <h1>Zeitplan</h1>
-      <p class="dates">✈ Hin: So 27.12., 7:15 · Zurück: Di 05.01., 18:35<br>10 Tage · 7 Fixpunkte · Einkaufspuffer · lockere Tage mit kurzen Wegen</p>
-      <nav class="toc" aria-label="Inhalt">
-        <a href="#buchen">Jetzt buchen</a>
-        <a href="#scheine">0-€-Scheine</a>
-        <a href="#plan">Tag für Tag</a>
-        <a href="#ideen">Ideenpool</a>
-        <a href="#regen">Regenplan</a>
-        <a href="#unterwegs">Unterwegs</a>
+      <a class="logo" href="index.html">🛵 Roma <span>con Bambini</span></a>
+      <nav class="nav" aria-label="Hauptmenü">
+        <a href="index.html">Start</a>
+        <a href="zeitplan.html" aria-current="page">Zeitplan</a>
+        <a href="orte.html">Orte</a>
+        <a href="packen.html">Packen</a>
+        <a href="wetter.html">Wetter & Feiertage</a>
+        <a href="unterwegs.html">Unterwegs</a>
+        <a href="scheine.html">0-€-Scheine</a>
       </nav>
     </div>
   </header>
+  <div class="awning" aria-hidden="true"></div>
+
 
   <main class="wrap">
+    <div class="hero">
+      <p class="kicker">Il programma</p>
+      <h1>Zeitplan</h1>
+      <p class="lead">Zehn Tage, sieben Fixpunkte und jeden Tag nur <em>ein</em> großes Programm. Auf einen Tag tippen, dann klappt er auf.</p>
+      <ul class="chips"><li class="chip tiber">✈️ Hin: So 27.12., 7:15</li><li class="chip tiber">✈️ Zurück: Di 5.1., 18:35</li><li class="chip ">🚌 Abfahrt meist 8–9 Uhr</li><li class="chip sun">🛒 4 Einkaufspuffer</li></ul>
+    </div>
 
-    <section id="logik">
-      <h2>So ist der Plan gebaut</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Fixpunkte nach Öffnungstagen</h3>
-          <ul>
-            <li><strong>Petersdom am Montag (28.12.):</strong> Der Petersdom hat montags geöffnet. Mittwochs (Generalaudienz) und an Feiertagen mit Papstmesse ist es dort voller oder eingeschränkt.</li>
-            <li><strong>Kolosseum am Dienstag (29.12.):</strong> Am 1.1. ist es geschlossen. Am 3.1. (erster Sonntag, freier Eintritt) ist es überlaufen.</li>
-            <li><strong>Ostia Antica am Mittwoch (30.12.):</strong> Die Ausgrabung ist montags geschlossen.</li>
-            <li><strong>Neujahrsparade am 1.1.:</strong> Sie startet nachmittags. Vormittags geht es locker in die Villa Borghese gleich neben der Strecke.</li>
-            <li><strong>Forte, Villa Pamphilj und Gianicolo am Montag (4.1.):</strong> Montags haben viele Museen zu. Das Forte liegt direkt bei der Unterkunft, und zum Gianicolo kommt man zu Fuß durch den Park.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Rhythmus für 7 Personen</h3>
-          <ul>
-            <li>Auf einen anstrengenden Tag folgt ein ruhigerer.</li>
-            <li><strong>Pro Tag nur ein Hauptprogramm am Vormittag.</strong> Der Nachmittag ist ein Zusatzangebot und kein Pflichtprogramm.</li>
-            <li><strong>Abfahrt an der Unterkunft meist zwischen 8 und 9 Uhr.</strong> Ins Zentrum braucht man 15–40 Minuten (siehe „Ab der Unterkunft“).</li>
-            <li>Mittagsschlaf fürs Kleinkind im Buggy oder in der Trage (ca. 13–15 Uhr). Für einen Zwischenstopp ist die Unterkunft zu weit weg.</li>
-            <li>Gegen 16:45 Uhr wird es dunkel. Gute Zeit für Weihnachtsbeleuchtung, Gelato und den Rückweg.</li>
-          </ul>
-        </div>
-      </div>
-      <p class="badge">Alle Öffnungszeiten, Preise und Regeln sind Richtwerte. Bitte 1–2 Wochen vor Abreise auf den offiziellen Seiten prüfen.</p>
-    </section>
+    <aside class="lupa"><span class="ico" aria-hidden="true">🐺</span><div><b>Lupa sagt:</b><p>Mein Wölfinnen-Rhythmus: vormittags das große Ding, nachmittags gemütlich. Mittagsschlaf im Buggy oder in der Trage, denn die Unterkunft ist für einen Zwischenstopp zu weit weg. Um 16:45 Uhr wird's dunkel – perfekte Gelato-Zeit.</p></div></aside>
 
     <section id="buchen">
-      <h2>Jetzt buchen &amp; klären</h2>
-      <div class="card">
-        <ul class="todo" id="todo">
-          <li><label><input type="checkbox" data-id="kolosseum"><span><strong>Kolosseum mit Untergrund (Full Experience „Sotterranei“)</strong> – nur über den offiziellen Ticketshop des Parco archeologico del Colosseo. Die Kontingente sind klein und werden meist etwa einen Monat vorher freigeschaltet, für den 29.12. also <strong>ab Ende November täglich nachsehen</strong>. Kinder unter 18 aus der EU sind meist frei, brauchen aber ein reserviertes Ticket (kleine Gebühr). Für den Untergrund das Kleinkind in die Trage nehmen.</span></label></li>
-          <li><label><input type="checkbox" data-id="kolosseum-plan-b"><span><strong>Plan B ohne Untergrund:</strong> Ein normales Zeitfenster-Ticket für Kolosseum, Forum Romanum und Palatin trotzdem rechtzeitig sichern. Bei Stornierungen bekommt man den Untergrund manchmal noch kurzfristig.</span></label></li>
-          <li><label><input type="checkbox" data-id="forte"><span><strong>Forte Aurelia Antica:</strong> liegt direkt bei der Unterkunft. Die Festung gehört zur Guardia di Finanza und ist nur mit Anmeldung zu besichtigen. <strong>Führung per E-Mail anfragen:</strong> <a href="mailto:prenotazione.forteaurelia@gdf.it">prenotazione.forteaurelia@gdf.it</a>, Wunschtermin 4.1. oder ein anderer Tag früh morgens bzw. am späten Nachmittag.</span></label></li>
-          <li><label><input type="checkbox" data-id="transfer-hin"><span><strong>Transfer Flughafen → Unterkunft am 27.12. vorbestellen:</strong> Großraumtaxi oder Van für 7 Personen, 7 Handgepäck-Koffer, den großen Koffer und den Buggy. Einen Kindersitz anfragen.</span></label></li>
-          <li><label><input type="checkbox" data-id="transfer-rueck"><span><strong>Transfer Unterkunft → Flughafen am 5.1. um ca. 15:15 Uhr vorbestellen</strong> und mit dem Gastgeber klären, ob die Koffer bis dahin in der Unterkunft bleiben dürfen.</span></label></li>
-          <li><label><input type="checkbox" data-id="apps"><span><strong>Fahrplan-App aufs Handy laden</strong> (z.&nbsp;B. Moovit, Citymapper oder die ATAC-App) und die Haltestelle <em>Aurelia Antica/Don Guanella</em> als Favorit speichern.</span></label></li>
-          <li><label><input type="checkbox" data-id="campo-santo"><span><strong>Deutscher Friedhof (Campo Santo Teutonico):</strong> kostenlos, ist aber <strong>nur vormittags</strong> geöffnet (meist bis ca. 12 Uhr). Öffnungstage und Uhrzeit kurz vorher prüfen.</span></label></li>
-          <li><label><input type="checkbox" data-id="kuppel"><span><em>Optional:</em> Tickets für die Kuppel des Petersdoms kauft man vor Ort. Viele enge Stufen, also ohne Buggy.</span></label></li>
-          <li><label><input type="checkbox" data-id="massimo"><span><em>Optional:</em> Palazzo Massimo (2.1.) und Explora-Kindermuseum (Regentag): bei Explora sind Zeitfenster-Tickets meist Pflicht.</span></label></li>
-        </ul>
-        <p class="hint" id="todo-hint">Häkchen werden in diesem Browser gespeichert.</p>
-      </div>
-    </section>
-
-    <section id="scheine">
-      <h2>💶 0-€-Scheine sammeln</h2>
-      <div class="cards">
-        <div class="card accent-a">
-          <h3>Filitalia Santarossa</h3>
-          <ul class="plain">
-            <li>📍 Piazza Città Leonina 4 (San Pietro), direkt nördlich der Kolonnaden</li>
-            <li>🕘 laut Website täglich geöffnet, also auch am Wochenende (genaue Uhrzeiten erfragen)</li>
-            <li>☎ +39 06 6880 1252 · <a href="mailto:filitalia@filitaliasantarossa.com">filitalia@filitaliasantarossa.com</a></li>
-            <li>🌐 <a href="https://filitaliasantarossa.com/banconote-cartamoneta-0-euro">Online-Liste der 0-€-Scheine</a></li>
-          </ul>
-        </div>
-        <div class="card accent-b">
-          <h3>Romanphil</h3>
-          <ul class="plain">
-            <li>📍 Via Alcide De Gasperi 23, ca. 5–10 Min. südlich vom Petersplatz, nahe Bus 98 „Cavalleggeri/S. Pietro“</li>
-            <li>🕘 Mo–Fr 9–18 Uhr, am Wochenende und am 1.1. geschlossen</li>
-            <li>🌐 <a href="https://www.romanphil.com/categoria-prodotto/numismatica/euro-0-euro-souvenir/">Online-Liste der 0-€-Scheine</a></li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Tipps</h3>
-          <ul>
-            <li>Am <strong>28.12.</strong> (Petersdom-Tag) kommt man an beiden Läden vorbei. Weitere Gelegenheiten sind der 3.1. auf dem Weg zur Engelsburg und der 4.1. auf dem Rückweg vom Gianicolo.</li>
-            <li><strong>Vorher anrufen oder mailen</strong> und die Wunschmotive zurücklegen lassen. Ältere Ausgaben sind oft ausverkauft.</li>
-            <li>Viele Motive gibt es <strong>normal und farbig</strong>. Preise laut den Listen: ca. 5–8 € normal, ca. 10 € farbig.</li>
-            <li>An offiziellen Touristenstellen (Kolosseum-Shop, Vatikanische Museen, Infopoints) ließ sich kein Verkauf belegen. Nachfragen schadet aber nicht.</li>
-            <li>Schutzhüllen und eine feste Mappe mitnehmen, damit die Scheine im Rucksack nicht knicken.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card" style="margin-top:14px">
-        <h3>Motivliste zum Abhaken</h3>
-        <p class="hint">Zusammengestellt aus den Online-Listen der beiden Händler (Stand November 2026). Im Laden kann das Angebot abweichen.</p>
-        <p class="list-group-title">Rom</p>
-        <ul class="todo cols">
-            <li><label><input type="checkbox" data-id="sch-kolosseo"><span>Kolosseum (Colosseo)</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-trevi"><span>Trevi-Brunnen</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-pantheon"><span>Pantheon</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-spagna"><span>Spanische Treppe (Piazza di Spagna)</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-santangelo"><span>Engelsburg (Castel Sant’Angelo)</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-milite"><span>Milite Ignoto (Vittoriano)</span></label></li>
-        </ul>
-        <p class="list-group-title">Vatikan &amp; Papst Leo XIV.</p>
-        <ul class="todo cols">
-            <li><label><input type="checkbox" data-id="sch-vaticano"><span>Vaticano</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-piazza"><span>Petersplatz (Piazza San Pietro)</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-basilica"><span>Petersdom (Basilica San Pietro)</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-angelo"><span>Petersdom mit Engel</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-giub-porta"><span>Heiliges Jahr 2025 – Heilige Pforte</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-giub-basilica"><span>Heiliges Jahr 2025 – Petersdom</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-leo-piazza"><span>Papst Leo XIV. – Petersplatz</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-leo-cupola"><span>Papst Leo XIV. – Kuppel</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-leo-elezione"><span>Papst Leo XIV. – Wahl</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-leo-loggia"><span>Papst Leo XIV. – Wahl, Loggia</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-leo-basilica"><span>Papst Leo XIV. – Petersdom</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-leo-sistina"><span>Papst Leo XIV. – Sixtinische Kapelle</span></label></li>
-        </ul>
-        <p class="list-group-title">Frühere Päpste</p>
-        <ul class="todo cols">
-            <li><label><input type="checkbox" data-id="sch-fr-basilica"><span>Franziskus – Petersdom</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-fr-porta"><span>Franziskus – Heilige Pforte 2025</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-fr-memoria"><span>Franziskus – In Memoria</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-fr-sede"><span>Sede vacante 2025</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-gp2"><span>Johannes Paul II.</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-b16"><span>Benedikt XVI.</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-gp1"><span>Johannes Paul I.</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-p6"><span>Paul VI.</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-g23"><span>Johannes XXIII.</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-p12"><span>Pius XII.</span></label></li>
-            <li><label><input type="checkbox" data-id="sch-p11"><span>Pius XI.</span></label></li>
-        </ul>
-        <p class="hint" id="scheine-count"></p>
+      <div class="card sun">
+        <h2 style="font-size:1.4rem">📌 Vorher buchen & klären</h2>
+        <ul class="todo "><li><label><input type="checkbox" data-id="kolosseum"><span><strong>Kolosseum mit Untergrund</strong> für den 29.12. im offiziellen Ticketshop (colosseo.it). Die Plätze sind knapp und werden meist ca. einen Monat vorher freigeschaltet, also <strong>ab Ende November täglich nachsehen</strong>.</span></label></li><li><label><input type="checkbox" data-id="kolosseum-plan-b"><span><strong>Plan B:</strong> ein normales Zeitfenster-Ticket für Kolosseum, Forum und Palatin sichern.</span></label></li><li><label><input type="checkbox" data-id="forte"><span><strong>Forte Aurelia Antica:</strong> Führung anfragen per E-Mail an <a href="mailto:prenotazione.forteaurelia@gdf.it">prenotazione.forteaurelia@gdf.it</a>.</span></label></li><li><label><input type="checkbox" data-id="transfer-hin"><span><strong>Transfer Flughafen → Unterkunft</strong> am 27.12.: Van für 7 Personen samt Gepäck und Buggy, mit Kindersitz.</span></label></li><li><label><input type="checkbox" data-id="transfer-rueck"><span><strong>Transfer Unterkunft → Flughafen</strong> am 5.1. um ca. 15:15 Uhr. Mit dem Gastgeber klären, dass die Koffer bis dahin bleiben dürfen.</span></label></li><li><label><input type="checkbox" data-id="campo-santo"><span><strong>Campo Santo Teutonico:</strong> Öffnungszeiten kurz vorher prüfen, er hat nur vormittags offen.</span></label></li><li><label><input type="checkbox" data-id="apps"><span><strong>Fahrplan-App</strong> laden (Moovit, Citymapper oder ATAC) und die Haltestelle <em>Aurelia Antica/Don Guanella</em> als Favorit speichern.</span></label></li><li><label><input type="checkbox" data-id="massimo"><span><em>Optional:</em> Explora-Kindermuseum für einen Regentag, das braucht Zeitfenster-Tickets.</span></label></li></ul>
+        <p class="hint storage-hint">Häkchen werden in diesem Browser gespeichert.</p>
       </div>
     </section>
 
     <section id="plan">
       <div class="section-head">
         <h2>Tag für Tag</h2>
-        <div class="tools no-print"><button type="button" onclick="window.print()">Drucken</button></div>
+        <div class="tools no-print">
+          <button class="btn small" type="button" data-open-all="1" data-target="details.day">Alle auf</button>
+          <button class="btn small" type="button" data-open-all="0" data-target="details.day">Alle zu</button>
+          <button class="btn small" type="button" data-print>Drucken</button>
+        </div>
       </div>
-      <p class="legend"><span class="tag fix">Fixpunkt</span> <span class="tag free">locker</span> <span class="tag cost0">gratis</span> = kostenlos bzw. Spende</p>
-
       <ol class="days">
-
-        <li class="day">
-          <div class="day-head">
-            <span class="date"><b>27</b>Dez · So</span>
-            <div><h3>Abflug 7:15 · Ankommen &amp; Weihnachtsmarkt</h3><span class="tag fix">✈ Hinflug</span> <span class="tag free">locker</span></div>
-          </div>
-          <ul class="slots">
-            <li><span class="t">ca. 5:15</span>Am Abflughafen sein (2 Std. vorher, mit Aufgabegepäck und Buggy). Am Vorabend alles fertig packen und die Reisekleidung bereitlegen. Die Kleinen können im Schlafanzug mit Jogginghose drüber ins Auto.</li>
-            <li><span class="t">7:15</span><strong>Abflug.</strong> Im Flugzeug schlafen lassen, bei Start und Landung Fläschchen oder Stillen und Kaugummi für die Großen.</li>
-            <li><span class="t">ca. 9:30</span>Ankunft in Rom (genaue Zeit siehe Flugplan), Gepäck holen. <strong>Vorbestellter Großraum-Transfer direkt zur Unterkunft</strong>, ab Fiumicino ca. 30–40 Min. Einen Kindersitz fürs Kleinkind beim Transfer anfragen. Mit Zug und Bus wäre es mit dem ganzen Gepäck sehr umständlich.</li>
-            <li><span class="t">ca. 10:30</span>Koffer in der Unterkunft abstellen. Mit dem Gastgeber vorher klären, ob ihr früher einchecken oder das Gepäck dort lassen dürft.</li>
-            <li><span class="t">🛒 Puffer</span><strong>Großeinkauf</strong> in der Nähe der Unterkunft (ca. 45–60 Min.): Wasser, Frühstück, Milch, Windeln-Nachschub, Snacks für die Snack-Boxen, Obst. Den nächsten Supermarkt vorher in der Karten-App heraussuchen. Danach Mittagessen.</li>
-            <li><span class="t">Nachmittag</span>Einchecken, auspacken. Mittagsschlaf für alle, der Tag hat früh begonnen.</li>
-            <li><span class="t">ca. 16:00</span>Mit dem Bus ins Zentrum. In der Dämmerung über die <strong>Piazza Navona</strong> mit Weihnachts- und Befana-Markt und Karussell <span class="tag cost0">gratis</span> → 5 Min. zum <strong>Pantheon</strong> (von außen) → 8 Min. zum <strong>Trevi-Brunnen</strong> bei Beleuchtung. Früh essen und früh ins Bett.</li>
-          </ul>
-          <p class="route">🚌 <strong>Hin:</strong> Bus 98 ab <em>Aurelia Antica/Don Guanella</em> bis <em>C.so Vittorio/Navona</em> (ca. 25–30 Min.). <strong>Zurück:</strong> Bus 98 ab Corso Vittorio Richtung Mazzacurati.</p>
-          <p class="walk">🚶 ca. 1,5 km am Abend · Wer zu müde ist, macht abends nur die Navona.</p>
-        </li>
-
-        <li class="day">
-          <div class="day-head">
-            <span class="date"><b>28</b>Dez · Mo</span>
-            <div><h3>Petersdom &amp; Deutscher Friedhof</h3><span class="tag fix">Fixpunkt</span></div>
-          </div>
-          <ul class="slots">
-            <li><span class="t">ca. 8:00</span>Abfahrt an der Unterkunft.</li>
-            <li><span class="t">ca. 8:30</span><strong>Petersplatz</strong> → Sicherheitskontrolle früh, dann ist die Schlange kurz. <strong>Petersdom</strong> <span class="tag cost0">gratis</span>: Pietà, Bronzebaldachin, Grotten. Schultern und Knie bedeckt.</li>
-            <li><span class="t">ca. 9:45</span><strong>Campo Santo Teutonico</strong> <span class="tag cost0">gratis</span>: links vom Petersdom bei der Schweizergarde (Arco delle Campane) „Campo Santo“ sagen. Ein ruhiger Ort mit deutscher Geschichte, der Kindern gut erklärt werden kann.</li>
-            <li><span class="t">ca. 10:30</span><strong>💶 0-€-Scheine</strong> für die Sammlung, zwei Läden nur wenige Minuten vom Petersplatz: <strong>Filitalia Santarossa</strong> (Piazza Città Leonina 4, gleich nördlich der Kolonnaden, laut Website täglich geöffnet) und <strong>Romanphil</strong> (Via Alcide De Gasperi 23, ca. 5–10 Min. südlich, Mo–Fr 9–18 Uhr). Mit der Motivliste unten vergleichen. Siehe <a href="#scheine">0-€-Scheine</a>.</li>
-            <li><span class="t">optional</span><strong>Kuppel</strong> für Kinder ab 7 Jahren mit einem Erwachsenen. Der andere Erwachsene bleibt mit dem Kleinkind unten.</li>
-            <li><span class="t">Mittag</span>Pizza al taglio im Borgo Pio (5 Min.).</li>
-            <li><span class="t">Nachmittag</span>Spaziergang über die <strong>Engelsbrücke</strong> zur Engelsburg (von außen; montags geschlossen) → 10 Min. zur <strong>Piazza Navona</strong> → <strong>San Luigi dei Francesi</strong> <span class="tag cost0">gratis</span> mit drei Caravaggios (Münzen fürs Licht mitnehmen).</li>
-          </ul>
-          <p class="route">🚌 <strong>Hin:</strong> Bus 98 ab <em>Aurelia Antica/Don Guanella</em> bis <em>Cavalleggeri/S. Pietro</em> (ca. 15–20 Min.), von dort 5 Min. zu Fuß zum Petersplatz. <strong>Zurück:</strong> Bus 98 ab <em>C.so Vittorio/Navona</em>.</p>
-          <p class="walk">🚶 ca. 3 km · Für den Buggy gibt es im Petersdom Rampen. In die Grotten besser mit der Trage.</p>
-        </li>
-
-        <li class="day">
-          <div class="day-head">
-            <span class="date"><b>29</b>Dez · Di</span>
-            <div><h3>Kolosseum, Forum Romanum &amp; Palatin</h3><span class="tag fix">Fixpunkt</span></div>
-          </div>
-          <ul class="slots">
-            <li><span class="t">ca. 8:00</span>Abfahrt an der Unterkunft. Das <strong>Zeitfenster für das Kolosseum</strong> ab ca. 9:00–9:30 Uhr buchen.</li>
-            <li><span class="t">Vormittag</span><strong>Kolosseum</strong> zum gebuchten Zeitfenster, wenn möglich mit <strong>Untergrund</strong> (dann Trage statt Buggy).</li>
-            <li><span class="t">danach</span><strong>Palatin</strong> (Gärten, weite Aussicht, Platz zum Rennen) → bergab ins <strong>Forum Romanum</strong>. Picknick oder Snack einplanen, im Gelände gibt es wenig zu kaufen.</li>
-            <li><span class="t">Nachmittag</span>Über die Treppen zum <strong>Kapitolsplatz</strong> <span class="tag cost0">gratis</span>. Hinter dem Rathaus liegt die Terrasse mit Blick aufs ganze Forum, der schönste Gratis-Blick bei Sonnenuntergang. Von dort sind es nur 3 Min. zur Bushaltestelle an der Piazza Venezia.</li>
-            <li><span class="t">Alternative</span>Wer noch Kraft hat: <strong>San Pietro in Vincoli</strong> mit Michelangelos Moses <span class="tag cost0">gratis</span>, 10 Min. vom Kolosseum.</li>
-          </ul>
-          <p class="route">🚌 <strong>Hin:</strong> Bus 98 bis <em>Plebiscito</em> (Piazza Venezia, ca. 35–40 Min.), dann ca. 12 Min. zu Fuß über die Via dei Fori Imperiali. Unterwegs sieht man schon die Kaiserforen. <em>Alternative:</em> Bus 892 bis <em>Irnerio</em> → Metro A bis Termini → Metro B bis Colosseo (ca. 50 Min., 2× umsteigen). <strong>Zurück:</strong> Bus 98 ab <em>Plebiscito</em>.</p>
-          <p class="walk">🚶 ca. 5 km auf unebenem Boden · Der anstrengendste Tag. Abends früh essen.</p>
-        </li>
-
-        <li class="day">
-          <div class="day-head">
-            <span class="date"><b>30</b>Dez · Mi</span>
-            <div><h3>Ostia Antica</h3><span class="tag fix">Fixpunkt</span></div>
-          </div>
-          <ul class="slots">
-            <li><span class="t">ca. 8:00</span>Abfahrt an der Unterkunft. Die Fahrt ist lang (siehe Route unten), deshalb heute <strong>Tagestickets</strong> nehmen. Ein Einzelticket gilt nur 100 Minuten.</li>
-            <li><span class="t">ca. 9:30</span>Ankunft in <strong>Ostia Antica</strong>. Ausgrabung: Theater (die Kinder dürfen auf die Ränge), Thermen mit Mosaiken, antike Gemeinschaftslatrine (ein Hit bei 7–13-Jährigen), Läden und Mietshäuser, in die man hineingehen kann. Auf dem Basaltpflaster lieber die Trage nehmen.</li>
-            <li><span class="t">Mittag</span>Picknick im Gelände oder im Borgo Ostia Antica neben der Burg.</li>
-            <li><span class="t">Nachmittag</span>Zurück bis zur Piramide: <strong>Cestius-Pyramide</strong> <span class="tag cost0">gratis</span> von außen, daneben der <strong>Protestantische Friedhof</strong> mit seinen Katzen <span class="tag cost0">Spende</span> (passt zum Campo Santo vom Montag). Wer mag, geht noch in die <strong>Centrale Montemartini</strong> (antike Statuen zwischen alten Turbinen, kaum Touristen; 1 Metro-Station weiter).</li>
-          </ul>
-          <p class="route">🚌 <strong>Hin (ca. 1:15–1:30 Std.):</strong> Bus 892 bis <em>Irnerio</em> → Metro A bis <em>Termini</em> → Metro B bis <em>Piramide</em> → Bahnhof Porta San Paolo, Zug Roma–Lido bis <em>Ostia Antica</em>, dann 10 Min. zu Fuß. <strong>Schneller:</strong> 2 Taxis direkt nach Ostia Antica (ca. 35–45 Min.). <strong>Zurück:</strong> Zug bis Piramide, Metro B → A bis Irnerio, Bus 892. Oder ab Piramide ein Taxi nehmen, wenn alle müde sind.</p>
-          <p class="walk">🚶 ca. 4–5 km in der Ausgrabung · Ostia ist weitläufig, bei Regen gibt es kaum Unterstellmöglichkeiten.</p>
-        </li>
-
-        <li class="day highlight">
-          <div class="day-head">
-            <span class="date"><b>31</b>Dez · Do</span>
-            <div><h3>Silvester: Tiberinsel, Trastevere &amp; Gianicolo</h3><span class="tag fix">Feuerwerk</span> <span class="tag free">locker</span></div>
-          </div>
-          <ul class="slots">
-            <li><span class="t">ca. 9:00</span>Abfahrt an der Unterkunft.</li>
-            <li><span class="t">Vormittag</span><strong>Jüdisches Viertel</strong> (Portico d’Ottavia, Teatro di Marcello) <span class="tag cost0">gratis</span> → 3 Min. zur <strong>Tiberinsel</strong> → über die Brücke nach <strong>Trastevere</strong>, <strong>Santa Maria in Trastevere</strong> mit Goldmosaiken <span class="tag cost0">gratis</span>.</li>
-            <li><span class="t">Mittag</span>Supplì und Pizza in Trastevere, dann zurück zur Unterkunft.</li>
-            <li><span class="t">🛒 Puffer</span><strong>Einkaufen für den 1.1.</strong> beim Supermarkt nahe der Unterkunft (ca. 45 Min., vor ca. 15 Uhr): Frühstück, Brot, Milch, Windeln, Snacks für die Parade. Heute schließen viele Läden früh, morgen ist das meiste zu.</li>
-            <li><span class="t">Nachmittag</span>Pause in der Unterkunft, Mittagsschlaf. Alle dick einpacken, Gehörschutz bereitlegen.</li>
-            <li><span class="t">ca. 21:45</span>Abfahrt zum <strong>Gianicolo</strong> (Piazzale Garibaldi) <span class="tag cost0">gratis</span>: Von der Aussichtsterrasse sieht man um Mitternacht das Feuerwerk über ganz Rom. Früh da sein, es wird voll. Warme Getränke in der Thermoskanne mitnehmen, Kleinkind mit Kapsel-Gehörschutz in die Trage.</li>
-          </ul>
-          <p class="route">🚌 <strong>Vormittags:</strong> Bus 98 bis <em>Argentina</em> (ca. 30 Min.), dann 5 Min. ins Ghetto. Zurück ab Trastevere: ca. 15 Min. zu Fuß zum Lungotevere/Ponte Vittorio und dort Bus 98, oder Taxi.<br>
-          <strong>Abends:</strong> Bus 98 bis <em>Cavalleggeri/S. Pietro</em> (ca. 15–20 Min.), dann ca. 20 Min. bergauf über die Salita di Sant’Onofrio zum Piazzale Garibaldi.<br>
-          <strong>Nach Mitternacht:</strong> ca. 20 Min. zu Fuß hinunter zu <em>Cavalleggeri/S. Pietro</em>, dort fährt der <strong>Nachtbus N98</strong> (ca. alle 40 Min.) direkt bis <em>Aurelia Antica/Don Guanella</em>. Den Silvester-Fahrplan vorher prüfen. Ein Taxi ist an Silvester kaum zu bekommen. <strong>Nicht zu Fuß über die Via Aurelia Antica</strong> zurückgehen: Sie ist eng, dunkel und hat teilweise keinen Gehweg.</p>
-          <p class="walk">🚶 ca. 3 km am Tag + ca. 2 km in der Nacht</p>
-        </li>
-
-        <li class="day highlight">
-          <div class="day-head">
-            <span class="date"><b>1</b>Jan · Fr</span>
-            <div><h3>Neujahr: Villa Borghese &amp; Neujahrsparade</h3><span class="tag fix">Parade</span> <span class="tag free">locker</span></div>
-          </div>
-          <ul class="slots">
-            <li><span class="t">Vormittag</span>Ausschlafen nach der Silvesternacht. Viele Museen und Läden sind heute geschlossen. Vor dem Aufbruch noch einmal auf die Toilette gehen, denn an der Strecke gibt es kaum WCs.</li>
-            <li><span class="t">ca. 10:30</span>Abfahrt an der Unterkunft. <strong>Feiertagsfahrplan:</strong> Die Busse fahren seltener, die Abfahrt in der App nachsehen.</li>
-            <li><span class="t">ca. 11:30</span>Über die <strong>Spanische Treppe</strong> <span class="tag cost0">gratis</span> zur <strong>Pincio-Terrasse</strong> → <strong>Villa Borghese</strong>: Spielplatz, Ententeich, Picknick als Mittagessen. Am Vormittag ist hier noch wenig los, und man ist schon in der Nähe der Paradestrecke.</li>
-            <li><span class="t">ca. 14:30</span>Zum Stehplatz an der Strecke gehen (siehe unten „Wo stehen?“) und die Kinder in die erste Reihe am Absperrgitter stellen.</li>
-            <li><span class="t">ca. 15:30</span><strong>Rome Parade</strong> <span class="tag cost0">gratis</span>: Marching Bands, Cheerleader, Fahnenschwinger und Wagen, zum Teil aus den USA. Sie dauert etwa 2–3 Stunden. Für das Kleinkind den Kapsel-Gehörschutz einpacken, die Trommeln sind laut.</li>
-            <li><span class="t">danach</span>Es ist dunkel und kalt. Zurück zur Unterkunft und dort essen, die Essensvorräte sind ja vom 31.12. eingekauft.</li>
-          </ul>
-          <div class="spot">
-            <h4>📍 Wo stehen?</h4>
-            <p class="hint">In den vergangenen Jahren startete die Parade gegen 15:30 Uhr an der <strong>Piazza del Popolo</strong> und lief über die Via del Corso, Via dei Condotti, Piazza di Spagna, Via del Babuino und Via di Ripetta. Ende Dezember die aktuelle Route und Startzeit auf romeparade.com oder turismoroma.it prüfen.</p>
-            <ul>
-              <li><strong>Unser Tipp: Via di Ripetta bzw. Piazza Augusto Imperatore.</strong> Hier ist mehr Platz als in den schmalen Einkaufsstraßen. Mit Buggy kommt man gut hin und wieder weg, und die Kinder können vorne am Gitter stehen.</li>
-              <li><strong>Via del Babuino:</strong> Man ist sehr nah dran, die Straße ist aber eng und schnell voll. Nur mit Trage, nicht mit Buggy.</li>
-              <li><strong>Piazza del Popolo:</strong> Am Start und Ende ist die Stimmung am größten, dort ist es aber auch am vollsten. Mit Kleinkind schwierig.</li>
-              <li><strong>Pincio-Terrasse:</strong> Hier schaut man von oben auf die Piazza del Popolo. Man ist weit weg und sieht weniger Details, dafür ist es ruhig und leiser. Gut, wenn das Kleinkind müde ist.</li>
-              <li><strong>Spanische Treppe / Via dei Condotti:</strong> sehr voll. Nicht empfehlenswert.</li>
-            </ul>
-            <p class="hint">Einen festen Treffpunkt ausmachen, zum Beispiel den Obelisken auf der Piazza del Popolo. Die Kinder tragen den Zettel mit der Handynummer in der Jacke.</p>
-          </div>
-          <p class="route">🚌 <strong>Hin (ca. 40–50 Min.):</strong> Bus 892 bis <em>Irnerio</em> oder <em>Valle Aurelia</em> → Metro A bis <em>Spagna</em>. <strong>Zurück:</strong> Metro A ab <em>Flaminio</em> (Piazza del Popolo). Direkt nach der Parade ist es dort sehr voll, also lieber zu Fuß nach <em>Lepanto</em> ausweichen. Mit der Metro A bis Valle Aurelia oder Irnerio fahren, dann Bus 892, der feiertags selten fährt. Für das letzte Stück ist ein Taxi mit 7 Personen am einfachsten.</p>
-          <p class="walk">🚶 ca. 3–4 km · Viel Stehen in der Kälte: Fußsack, Thermoskanne und Sitzunterlage für die Kleinen mitnehmen.</p>
-        </li>
-
-        <li class="day">
-          <div class="day-head">
-            <span class="date"><b>2</b>Jan · Sa</span>
-            <div><h3>Mosaiken, Palazzo Massimo &amp; Bummeln</h3><span class="tag free">locker</span></div>
-          </div>
-          <ul class="slots">
-            <li><span class="t">ca. 8:45</span>Abfahrt an der Unterkunft.</li>
-            <li><span class="t">Vormittag</span><strong>Palazzo Massimo</strong> (Museo Nazionale Romano, neben Termini): Fresken aus der Villa der Livia, ein Gartenzimmer rundum bemalt, der Faustkämpfer, eine Münzsammlung. Eins der besten Antikenmuseen Roms und angenehm leer. Kinder unter 18 sind meist frei.</li>
-            <li><span class="t">Mittag</span>Im Viertel <strong>Monti</strong> essen (10 Min.).</li>
-            <li><span class="t">Nachmittag</span><strong>Santa Maria Maggiore</strong> <span class="tag cost0">gratis</span> mit Krippe und Goldmosaiken → 2 Min. zu <strong>Santa Prassede</strong> <span class="tag cost0">gratis</span>: eine kleine Kapelle, ganz aus Gold-Mosaik, ein echter Geheimtipp.</li>
-            <li><span class="t">🛒 Puffer</span><strong>Einkaufen und Bummeln</strong> (ca. 1,5 Std.): kleine Läden in <strong>Monti</strong> (Via del Boschetto, Via Urbana) oder die Via Nazionale. Der <strong>Winterschlussverkauf</strong> (<em>saldi</em>) beginnt in Rom meist Anfang Januar. Auf dem Heimweg den Vorrat für Sonntag und Montag im Supermarkt nahe der Unterkunft auffüllen.</li>
-          </ul>
-          <p class="route">🚌 <strong>Hin:</strong> Bus 892 bis <em>Irnerio</em> → Metro A bis <em>Repubblica</em> (ca. 35–45 Min.), dann 3 Min. zu Fuß zum Palazzo Massimo. <strong>Zurück:</strong> Metro A ab <em>Termini</em> oder <em>Repubblica</em> bis Irnerio, dann Bus 892.</p>
-          <p class="walk">🚶 ca. 2–3 km · Gute Option auch bei Regen.</p>
-        </li>
-
-        <li class="day">
-          <div class="day-head">
-            <span class="date"><b>3</b>Jan · So</span>
-            <div><h3>Aventin, Schlüsselloch &amp; Bocca della Verità</h3><span class="tag free">locker</span></div>
-          </div>
-          <ul class="slots">
-            <li><span class="t">ca. 9:00</span>Abfahrt an der Unterkunft. Sonntags fahren die Busse etwas seltener.</li>
-            <li><span class="t">Vormittag</span><strong>Bocca della Verità</strong> (Hand ins Maul, kleine Spende, kurze Schlange) → <strong>Circo Massimo</strong> <span class="tag cost0">gratis</span>, wo die Kinder Wagenrennen spielen können → über den Clivo di Rocca Savella hinauf zum <strong>Orangengarten</strong> <span class="tag cost0">gratis</span> mit Blick auf den Petersdom → <strong>Santa Sabina</strong> <span class="tag cost0">gratis</span> → das <strong>Schlüsselloch der Malteser</strong> <span class="tag cost0">gratis</span>, durch das man genau auf die Peterskuppel schaut.</li>
-            <li><span class="t">Nachmittag</span>Erster Sonntag im Monat: Staatliche Museen sind meist <strong>kostenlos</strong>, aber voll. Wer mag, besucht die <strong>Engelsburg</strong>, die auf dem Rückweg an der Linie 98 liegt, oder den <strong>Palazzo Altemps</strong> bei der Navona. Sonst Gelato und früh nach Hause.</li>
-          </ul>
-          <p class="route">🚌 <strong>Hin:</strong> Bus 98 bis <em>Argentina</em> (ca. 30 Min.), dann ca. 15 Min. zu Fuß am Teatro di Marcello vorbei zur Bocca della Verità. <strong>Zurück:</strong> Vom Aventin ca. 20 Min. zu Fuß bis Argentina oder Teatro di Marcello, dann Bus 98.</p>
-          <p class="walk">🚶 ca. 4 km · Kurzer, steiler Anstieg zum Aventin. Für den Buggy gibt es einen Weg über die Via di Santa Sabina.</p>
-        </li>
-
-        <li class="day">
-          <div class="day-head">
-            <span class="date"><b>4</b>Jan · Mo</span>
-            <div><h3>Forte Aurelia Antica, Villa Pamphilj &amp; 12-Uhr-Schuss</h3><span class="tag fix">Fixpunkt</span></div>
-          </div>
-          <ul class="slots">
-            <li><span class="t">ca. 8:30</span><strong>Forte Aurelia Antica</strong>: Das Forte liegt direkt bei der Unterkunft und ist <strong>nur mit vereinbarter Führung</strong> zu besichtigen (siehe „Jetzt buchen“). Ohne Termin die Mauern und den Graben von außen anschauen. Falls die Führung zu einer anderen Zeit stattfindet, passt sie an jedem Tag früh morgens oder am späten Nachmittag.</li>
-            <li><span class="t">ca. 9:30</span>Zu Fuß in die <strong>Villa Doria Pamphilj</strong> <span class="tag cost0">gratis</span>, Roms größten Park, und quer hindurch Richtung Osten: Spielplätze, Teich, Platz zum Toben. Nicht auf der Via Aurelia Antica gehen, sondern im Park bleiben. Den nächsten Parkeingang vorher auf der Karte suchen.</li>
-            <li><span class="t">ca. 11:15</span>Durch die <strong>Porta San Pancrazio</strong> zur <strong>Fontana dell’Acqua Paola</strong> <span class="tag cost0">gratis</span> → Gianicolo-Promenade.</li>
-            <li><span class="t">11:45</span><strong>Mittagsschuss</strong> <span class="tag cost0">gratis</span>: Täglich um 12:00 Uhr feuert eine Kanone unterhalb der Piazzale Garibaldi. Sehr laut, also Gehörschutz fürs Kleinkind. Ganz nah am Zaun stehen, damit die Kinder etwas sehen.</li>
-            <li><span class="t">Mittag</span>Über die Treppen hinunter nach <strong>Trastevere</strong> zum Mittagessen, oder Picknick auf dem Gianicolo mit Blick über Rom.</li>
-            <li><span class="t">Nachmittag</span>Ein freier Puffer: Gelato, Trastevere oder früh nach Hause. Montags haben viele Museen zu, deshalb ist das ein Tag im Freien.</li>
-          </ul>
-          <p class="route">🚶 <strong>Hin:</strong> komplett zu Fuß, ca. 3–4 km bis zum Gianicolo, größtenteils durch den Park. 🚌 <strong>Zurück:</strong> vom Gianicolo ca. 15 Min. hinunter zu <em>Cavalleggeri/S. Pietro</em>, dann Bus 98 bis <em>Aurelia Antica/Don Guanella</em> (ca. 15–20 Min.).</p>
-          <p class="walk">🚶 ca. 5–6 km insgesamt · Viel Grün, wenig Pflaster, gut mit dem Buggy.</p>
-        </li>
-
-        <li class="day">
-          <div class="day-head">
-            <span class="date"><b>5</b>Jan · Di</span>
-            <div><h3>Befana, Mitbringsel &amp; Rückflug 18:35</h3><span class="tag fix">✈ Rückflug</span> <span class="tag free">locker</span></div>
-          </div>
-          <ul class="slots">
-            <li><span class="t">ca. 8:30</span>Fertig packen. Die Koffer bleiben in der Unterkunft, dafür mit dem Gastgeber einen späten Check-out oder eine Gepäckaufbewahrung vereinbaren. Im großen Koffer Platz und Gewicht für Mitbringsel freihalten.</li>
-            <li><span class="t">ca. 9:30</span>Abfahrt ins Zentrum.</li>
-            <li><span class="t">🛒 Puffer</span><strong>Mitbringsel</strong> (ca. 1,5 Std.): Am Tag vor der Befana ist auf der <strong>Piazza Navona</strong> am meisten los, mit Hexen-Figuren, Süßigkeiten und „Kohle“ aus Zucker. Lebensmittel wie Pasta, Pesto oder Olivenöl bekommt man auf dem Markt am <strong>Campo de’ Fiori</strong> (5 Min.). <strong>Öl, Pesto, Wein und Cremes kommen in den großen Koffer</strong>, im Handgepäck gilt die 100-ml-Grenze.</li>
-            <li><span class="t">Mittag</span>Letzte Pizza und letztes Gelato. Wer mag, besucht das <strong>Museo Napoleonico</strong> (meist Eintritt frei, 5 Min. von der Navona).</li>
-            <li><span class="t">ca. 13:45</span>Mit dem Bus zurück zur Unterkunft. Gepäck holen und die Mitbringsel in den großen Koffer packen.</li>
-            <li><span class="t">ca. 15:15</span><strong>Vorbestellter Transfer zum Flughafen</strong> (Großraumtaxi oder Van für 7 Personen, Gepäck und Buggy). Nach Fiumicino sind es ca. 30–45 Min., am Nachmittag kann Stau sein.</li>
-            <li><span class="t">ca. 16:30</span>Am Flughafen sein (2 Std. vor Abflug): Koffer aufgeben, Buggy bis zum Gate. Abendessen am Flughafen oder aus der Snack-Box.</li>
-            <li><span class="t">18:35</span><strong>Rückflug.</strong> Die Kinder sind dann müde, also bequeme Kleidung, Kuscheltier und Decke in den Rucksack.</li>
-          </ul>
-          <p class="route">🚌 <strong>Hin:</strong> Bus 98 bis <em>C.so Vittorio/Navona</em> (ca. 25–30 Min.). <strong>Zurück:</strong> Bus 98 ab Corso Vittorio, Abfahrt spätestens ca. 13:45 Uhr.</p>
-          <p class="hint">Falls ihr ab Ciampino fliegt: Von der Unterkunft dauert die Fahrt ca. 40–50 Min.</p>
-        </li>
-
+      <li><details class="day" id="tag-27">
+        <summary>
+          <span class="stamp"><b>27</b>Dez · So</span>
+          <span class="day-title"><h3>Abflug, Ankommen & Weihnachtsmarkt</h3><ul class="chips"><li class="chip tiber">✈️ 7:15</li><li class="chip sun">🛒 Großeinkauf</li><li class="chip ">🎄 Navona</li></ul></span>
+        </summary>
+        <div class="day-body">
+          <ul class="timeline"><li class="fly"><span class="t">ca. 5:15</span>Am Abflughafen sein. Am Vorabend alles packen. Die Kleinen dürfen im Schlafanzug ins Auto, das gilt als Reisekleidung.</li><li class="fly"><span class="t">7:15</span><strong>Abflug.</strong> Bei Start und Landung Fläschchen oder Stillen, für die Großen Kaugummi.</li><li class="fly"><span class="t">ca. 9:30</span>Landung, Gepäck holen, mit dem <strong>vorbestellten Großraum-Transfer</strong> zur Unterkunft (ca. 30–40 Min.).</li><li class=""><span class="t">ca. 10:30</span>Koffer abstellen. Mit dem Gastgeber vorher klären, ob das so früh geht.</li><li class="shop"><span class="t">🛒 Puffer</span><strong>Großeinkauf</strong> beim Supermarkt in der Nähe: Wasser, Frühstück, Milch, Windeln, Snack-Nachschub.</li><li class=""><span class="t">Nachmittag</span>Einchecken und Mittagsschlaf für <em>alle</em>. Ihr seid seit 4 Uhr wach.</li><li class=""><span class="t">ca. 16:00</span>Mit dem Bus zur <strong>Piazza Navona</strong>: Weihnachtsmarkt, Karussell, Berninis Vier-Ströme-Brunnen. Früh essen, früh schlafen.</li></ul>
+          <div class="route"><p>🚌 Bus <b>98</b> ab <span class="stop">Aurelia Antica/Don Guanella</span> bis <span class="stop">C.so Vittorio/Navona</span>, ca. 25–30 Min. Zurück mit der 98 Richtung Mazzacurati.</p></div>
+          <div class="more"><a class="btn small" href="orte/navona.html">🎄 Mehr zur Piazza Navona</a></div>
+        </div>
+      </details></li>
+      <li><details class="day" id="tag-28">
+        <summary>
+          <span class="stamp"><b>28</b>Dez · Mo</span>
+          <span class="day-title"><h3>Petersdom & Deutscher Friedhof</h3><ul class="chips"><li class="chip terra">Fixpunkt</li><li class="chip ">🕗 ab 8:00</li><li class="chip sun">💶 Scheine-Stopp</li></ul></span>
+        </summary>
+        <div class="day-body">
+          <ul class="timeline"><li class=""><span class="t">ca. 8:00</span>Abfahrt an der Unterkunft.</li><li class=""><span class="t">ca. 8:30</span><strong>Petersdom</strong>: früh durch die Kontrolle, dann Pietà, Baldachin und Grotten. Schultern und Knie bedeckt.</li><li class=""><span class="t">ca. 9:45</span><strong>Campo Santo Teutonico</strong>: links vom Dom bei der Schweizergarde „Campo Santo“ sagen. Nur vormittags offen.</li><li class="shop"><span class="t">ca. 10:30</span><strong>0-€-Scheine</strong> bei Filitalia Santarossa, gleich an den Kolonnaden.</li><li class=""><span class="t">optional</span><strong>Kuppel</strong> mit den Großen (ab 7). Ein Erwachsener bleibt mit dem Kleinkind unten.</li><li class=""><span class="t">Mittag</span>Pizza al taglio im Borgo Pio.</li><li class=""><span class="t">Nachmittag</span>Über die <strong>Engelsbrücke</strong> zur Engelsburg (von außen, montags zu). Danach nach Hause oder noch ein Gelato.</li></ul>
+          <div class="route"><p>🚌 Bus <b>98</b> bis <span class="stop">Cavalleggeri/S. Pietro</span>, ca. 15–20 Min., dann 5 Min. zu Fuß. Zurück ab dort oder ab <span class="stop">C.so Vittorio</span>.</p></div>
+          <div class="more"><a class="btn small" href="orte/petersdom.html">⛪ Mehr zum Petersdom</a><a class="btn small" href="scheine.html">💶 0-€-Scheine</a></div>
+        </div>
+      </details></li>
+      <li><details class="day" id="tag-29">
+        <summary>
+          <span class="stamp"><b>29</b>Dez · Di</span>
+          <span class="day-title"><h3>Kolosseum, Palatin & Forum Romanum</h3><ul class="chips"><li class="chip terra">Fixpunkt</li><li class="chip sun">🎟 Ticket nötig</li><li class="chip ">🦵 anstrengend</li></ul></span>
+        </summary>
+        <div class="day-body">
+          <ul class="timeline"><li class=""><span class="t">ca. 8:00</span>Abfahrt an der Unterkunft. Das Zeitfenster für das Kolosseum ab ca. 9:00–9:30 Uhr buchen.</li><li class=""><span class="t">Vormittag</span><strong>Kolosseum</strong>, wenn möglich mit Untergrund (dann Trage statt Buggy).</li><li class=""><span class="t">danach</span><strong>Palatin</strong> mit Gärten und Aussicht → bergab ins <strong>Forum Romanum</strong>. Picknick einpacken.</li><li class=""><span class="t">Nachmittag</span>Treppe hoch zur <strong>Kapitol-Terrasse</strong>: Forum-Blick im Sonnenuntergang, gratis.</li></ul>
+          <div class="route"><p>🚌 Bus <b>98</b> bis <span class="stop">Plebiscito</span> (Piazza Venezia, ca. 35–40 Min.), dann 12 Min. zu Fuß über die Via dei Fori Imperiali. Zurück ab <span class="stop">Plebiscito</span>.</p><p>Alternative: Bus <b>892</b> → Metro A bis Termini → Metro B bis Colosseo (ca. 50 Min.).</p></div>
+          <div class="more"><a class="btn small" href="orte/kolosseum.html">🏟️ Mehr zum Kolosseum</a></div>
+        </div>
+      </details></li>
+      <li><details class="day" id="tag-30">
+        <summary>
+          <span class="stamp"><b>30</b>Dez · Mi</span>
+          <span class="day-title"><h3>Ostia Antica</h3><ul class="chips"><li class="chip terra">Fixpunkt</li><li class="chip tiber">🎫 Tagesticket</li><li class="chip ">🧺 Picknick</li></ul></span>
+        </summary>
+        <div class="day-body">
+          <ul class="timeline"><li class=""><span class="t">ca. 8:00</span>Abfahrt an der Unterkunft. Die Fahrt ist lang, deshalb heute <strong>Tagestickets</strong> nehmen.</li><li class=""><span class="t">ca. 9:30</span><strong>Ostia Antica</strong>: Theater, Mosaiken, antikes Gemeinschaftsklo. Trage statt Buggy.</li><li class=""><span class="t">Mittag</span>Picknick in den Ruinen.</li><li class=""><span class="t">Nachmittag</span>Zurück bis zur Piramide: <strong>Cestius-Pyramide</strong> und Protestantischer Friedhof mit Katzen.</li></ul>
+          <div class="route"><p>🚌 Bus <b>892</b> → <span class="stop">Irnerio</span> → Metro A bis Termini → Metro B bis <span class="stop">Piramide</span> → Zug Roma–Lido bis <span class="stop">Ostia Antica</span>, insgesamt ca. 1:15–1:30 Std.</p><p>🚕 Schneller geht es mit 2 Taxis (ca. 35–45 Min.).</p></div>
+          <div class="more"><a class="btn small" href="orte/ostia.html">🏺 Mehr zu Ostia Antica</a></div>
+        </div>
+      </details></li>
+      <li><details class="day hl" id="tag-31">
+        <summary>
+          <span class="stamp"><b>31</b>Dez · Do</span>
+          <span class="day-title"><h3>Trastevere & Silvester am Gianicolo</h3><ul class="chips"><li class="chip terra">🎆 Feuerwerk</li><li class="chip sun">🛒 Vorrat für Neujahr</li><li class="chip ">🦻 Gehörschutz</li></ul></span>
+        </summary>
+        <div class="day-body">
+          <ul class="timeline"><li class=""><span class="t">ca. 9:00</span>Abfahrt an der Unterkunft.</li><li class=""><span class="t">Vormittag</span><strong>Jüdisches Viertel</strong> → <strong>Tiberinsel</strong> → <strong>Trastevere</strong>.</li><li class=""><span class="t">Mittag</span>Supplì und Pizza, dann zurück.</li><li class="shop"><span class="t">🛒 Puffer</span><strong>Einkauf für Neujahr</strong> vor ca. 15 Uhr. Am 1.1. ist fast alles zu.</li><li class=""><span class="t">Nachmittag</span>Mittagsschlaf. Heute Nacht wird es spät.</li><li class=""><span class="t">ca. 21:45</span>Zum <strong>Gianicolo</strong>: Um Mitternacht liegt ganz Rom im Feuerwerk.</li></ul>
+          <div class="route"><p>🚌 Vormittags: Bus <b>98</b> bis <span class="stop">Argentina</span> (ca. 30 Min.).</p><p>🌙 Abends: Bus <b>98</b> bis <span class="stop">Cavalleggeri/S. Pietro</span>, dann 20 Min. bergauf. Zurück: hinunter zu <span class="stop">Cavalleggeri/S. Pietro</span>, dort Nachtbus <b>N98</b> (ca. alle 40 Min.) bis <span class="stop">Don Guanella</span>. <strong>Nicht</strong> nachts zu Fuß die Via Aurelia Antica entlang, sie ist eng, dunkel und hat teils keinen Gehweg.</p></div>
+          <div class="more"><a class="btn small" href="orte/trastevere.html">🛶 Mehr zu Trastevere</a><a class="btn small" href="orte/gianicolo.html">🎆 Mehr zum Gianicolo</a></div>
+        </div>
+      </details></li>
+      <li><details class="day hl" id="tag-1">
+        <summary>
+          <span class="stamp"><b>1</b>Jan · Fr</span>
+          <span class="day-title"><h3>Villa Borghese & Neujahrsparade</h3><ul class="chips"><li class="chip terra">🥁 Parade ~15:30</li><li class="chip ">😴 Ausschlafen</li><li class="chip tiber">Feiertag</li></ul></span>
+        </summary>
+        <div class="day-body">
+          <ul class="timeline"><li class=""><span class="t">Vormittag</span>Ausschlafen. Heute ist fast alles zu.</li><li class=""><span class="t">ca. 10:30</span>Abfahrt. Die Busse fahren nach Feiertagsfahrplan, also seltener.</li><li class=""><span class="t">ca. 11:30</span>Spanische Treppe → Pincio → <strong>Villa Borghese</strong>: Spielplatz, Picknick.</li><li class=""><span class="t">ca. 14:30</span>Stehplatz suchen: Unser Tipp ist die <strong>Via di Ripetta</strong>.</li><li class=""><span class="t">ca. 15:30</span><strong>Rome Parade</strong>: Marching Bands, Cheerleader, Fahnenschwinger.</li></ul>
+          <div class="route"><p>🚌 Bus <b>892</b> → Metro A bis <span class="stop">Spagna</span> (ca. 40–50 Min.). Zurück mit der Metro A ab <span class="stop">Lepanto</span> (Flaminio ist nach der Parade voll), dann 892 oder Taxi.</p></div>
+          <div class="more"><a class="btn small" href="orte/borghese.html">🥁 Parade & Stehplätze</a></div>
+        </div>
+      </details></li>
+      <li><details class="day" id="tag-2">
+        <summary>
+          <span class="stamp"><b>2</b>Jan · Sa</span>
+          <span class="day-title"><h3>Gold-Mosaiken, Palazzo Massimo & Bummeln</h3><ul class="chips"><li class="chip tiber">🌧 regentauglich</li><li class="chip sun">🛒 Saldi</li></ul></span>
+        </summary>
+        <div class="day-body">
+          <ul class="timeline"><li class=""><span class="t">ca. 8:45</span>Abfahrt an der Unterkunft.</li><li class=""><span class="t">Vormittag</span><strong>Palazzo Massimo</strong>: bemalter Garten, Bronze-Boxer, Münzen.</li><li class=""><span class="t">Mittag</span>Essen im Viertel Monti.</li><li class=""><span class="t">Nachmittag</span><strong>Santa Maria Maggiore</strong> mit der Krippe → <strong>Santa Prassede</strong>, die Goldkapelle.</li><li class="shop"><span class="t">🛒 Puffer</span>Bummeln in Monti oder auf der Via Nazionale, der Winterschlussverkauf (<em>saldi</em>) beginnt meist Anfang Januar.</li></ul>
+          <div class="route"><p>🚌 Bus <b>892</b> → <span class="stop">Irnerio</span> → Metro A bis <span class="stop">Repubblica</span> (ca. 35–45 Min.).</p></div>
+          <div class="more"><a class="btn small" href="orte/massimo.html">✨ Mehr zu Mosaiken & Museum</a></div>
+        </div>
+      </details></li>
+      <li><details class="day" id="tag-3">
+        <summary>
+          <span class="stamp"><b>3</b>Jan · So</span>
+          <span class="day-title"><h3>Aventin, Schlüsselloch & Bocca della Verità</h3><ul class="chips"><li class="chip sun">🔑 Geheimtipp</li><li class="chip pino">gratis</li></ul></span>
+        </summary>
+        <div class="day-body">
+          <ul class="timeline"><li class=""><span class="t">ca. 9:00</span>Abfahrt an der Unterkunft. Sonntags fahren die Busse seltener.</li><li class=""><span class="t">Vormittag</span><strong>Bocca della Verità</strong> → <strong>Circo Massimo</strong> → <strong>Orangengarten</strong> → <strong>Schlüsselloch</strong>.</li><li class=""><span class="t">Nachmittag</span>Erster Sonntag im Monat, da sind staatliche Museen meist gratis, aber voll. Zum Beispiel die Engelsburg. Oder einfach Gelato.</li></ul>
+          <div class="route"><p>🚌 Bus <b>98</b> bis <span class="stop">Argentina</span> (ca. 30 Min.), dann 15 Min. zu Fuß. Zurück genauso.</p></div>
+          <div class="more"><a class="btn small" href="orte/aventin.html">🔑 Mehr zum Aventin</a></div>
+        </div>
+      </details></li>
+      <li><details class="day" id="tag-4">
+        <summary>
+          <span class="stamp"><b>4</b>Jan · Mo</span>
+          <span class="day-title"><h3>Forte, Villa Pamphilj & 12-Uhr-Kanone</h3><ul class="chips"><li class="chip terra">Fixpunkt</li><li class="chip pino">🚶 zu Fuß</li><li class="chip sun">💥 12:00</li></ul></span>
+        </summary>
+        <div class="day-body">
+          <ul class="timeline"><li class=""><span class="t">ca. 8:30</span><strong>Forte Aurelia Antica</strong>, direkt bei der Unterkunft, nur mit angemeldeter Führung.</li><li class=""><span class="t">ca. 9:30</span>Zu Fuß durch die <strong>Villa Doria Pamphilj</strong>: Spielplätze, Pinien, Teich.</li><li class=""><span class="t">ca. 11:15</span>Porta San Pancrazio → Fontanone → Gianicolo.</li><li class=""><span class="t">11:45</span>Platz am Zaun sichern: Um <strong>12:00 Uhr</strong> feuert die Kanone.</li><li class=""><span class="t">Mittag</span>Treppe hinunter nach Trastevere oder Picknick mit Aussicht.</li></ul>
+          <div class="route"><p>🚶 Hin zu Fuß, ca. 3–4 km, größtenteils durch den Park. 🚌 Zurück: hinunter zu <span class="stop">Cavalleggeri/S. Pietro</span>, Bus <b>98</b>.</p></div>
+          <div class="more"><a class="btn small" href="orte/pamphilj.html">🌲 Forte & Park</a><a class="btn small" href="orte/gianicolo.html">💥 Gianicolo</a></div>
+        </div>
+      </details></li>
+      <li><details class="day" id="tag-5">
+        <summary>
+          <span class="stamp"><b>5</b>Jan · Di</span>
+          <span class="day-title"><h3>Befana, Mitbringsel & Rückflug</h3><ul class="chips"><li class="chip tiber">✈️ 18:35</li><li class="chip sun">🛒 Mitbringsel</li></ul></span>
+        </summary>
+        <div class="day-body">
+          <ul class="timeline"><li class=""><span class="t">ca. 8:30</span>Packen, die Koffer bleiben in der Unterkunft. Platz für Mitbringsel lassen.</li><li class=""><span class="t">ca. 9:30</span>Bus ins Zentrum.</li><li class="shop"><span class="t">🛒 Puffer</span><strong>Befana-Markt</strong> auf der Navona, Pasta und Pesto am <strong>Campo de’ Fiori</strong>. Öl und Pesto kommen in den großen Koffer.</li><li class=""><span class="t">ca. 13:45</span>Zurück zur Unterkunft, Gepäck holen.</li><li class="fly"><span class="t">ca. 15:15</span>Vorbestellter <strong>Transfer zum Flughafen</strong> (ca. 30–45 Min.).</li><li class="fly"><span class="t">ca. 16:30</span>Am Flughafen. Um <strong>18:35 Uhr</strong> geht es nach Hause.</li></ul>
+          <div class="route"><p>🚌 Bus <b>98</b> bis <span class="stop">C.so Vittorio/Navona</span> und zurück. Spätestens ca. 13:45 Uhr zurückfahren.</p></div>
+          <div class="more"><a class="btn small" href="orte/navona.html">🧹 Befana & Navona</a></div>
+        </div>
+      </details></li>
       </ol>
+      <p class="hint">Öffnungszeiten, Fahrzeiten und Preise sind Richtwerte, bitte kurz vor der Reise prüfen.</p>
     </section>
-
-    <section id="ideen">
-      <h2>Ideenpool: gratis &amp; unbekannter</h2>
-      <p>Zum Tauschen oder Ergänzen an freien Nachmittagen. Die Ziele sind nach Vierteln gruppiert, sodass alles innerhalb von ca. 10 Minuten zu Fuß erreichbar ist.</p>
-      <div class="cards">
-        <div class="card accent-a">
-          <h3>Navona &amp; Pantheon</h3>
-          <ul>
-            <li><strong>Pantheon</strong>: kleiner Eintritt, unter 18 meist frei.</li>
-            <li><strong>Sant’Agostino</strong> und <strong>San Luigi dei Francesi</strong>: Caravaggio-Gemälde, gratis.</li>
-            <li><strong>Museo Barracco</strong>: antike Skulpturen in einem kleinen Palazzo, städtisch, meist gratis.</li>
-            <li><strong>Museo Napoleonico</strong>: städtisch, meist gratis.</li>
-            <li><strong>Palazzo Altemps</strong>: römische Statuen in einem Renaissance-Palast, sehr ruhig.</li>
-          </ul>
-        </div>
-        <div class="card accent-b">
-          <h3>Ghetto, Tiberinsel &amp; Kapitol</h3>
-          <ul>
-            <li><strong>Portico d’Ottavia</strong>, <strong>Teatro di Marcello</strong>: gratis.</li>
-            <li><strong>Area Sacra di Largo Argentina</strong>, wo Caesar ermordet wurde: von oben gratis, mit Katzenkolonie.</li>
-            <li><strong>Kapitol-Terrasse</strong> mit Forum-Blick: gratis.</li>
-            <li><strong>Vittoriano</strong>: die Treppen und der Altar des Vaterlands sind gratis, der Aufzug zur Dachterrasse kostet.</li>
-          </ul>
-        </div>
-        <div class="card accent-c">
-          <h3>Villa Borghese &amp; Popolo</h3>
-          <ul>
-            <li><strong>Museo Pietro Canonica</strong>: Bildhauer-Atelier im Park, städtisch, meist gratis.</li>
-            <li><strong>Museo Carlo Bilotti</strong>: moderne Kunst (de Chirico) im Park, meist gratis.</li>
-            <li><strong>Bioparco</strong> (Zoo) als Joker für die Kleinen (kostet Eintritt).</li>
-            <li><strong>Explora</strong>: Kindermuseum zum Anfassen bei Flaminio, ideal für 1–10 Jahre (Zeitfenster buchen).</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Testaccio &amp; Ostiense</h3>
-          <ul>
-            <li><strong>Mercato di Testaccio</strong>: Streetfood-Markthalle, ideal fürs Mittagessen (sonntags zu).</li>
-            <li><strong>Centrale Montemartini</strong>: Antike trifft auf Maschinenhalle.</li>
-            <li><strong>Cestius-Pyramide</strong> und <strong>Protestantischer Friedhof</strong>.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Etwas weiter, aber besonders</h3>
-          <ul>
-            <li><strong>Museo delle Mura</strong> in der Porta San Sebastiano: Man läuft ein Stück auf der antiken Stadtmauer. Städtisch, meist gratis, und bei Kindern sehr beliebt.</li>
-            <li>Danach ein Stück der <strong>Via Appia Antica</strong> (Basaltpflaster, Trage nehmen).</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Kleine Kinder-Freuden</h3>
-          <ul>
-            <li><strong>Nasoni</strong>: Trinkbrunnen überall. Unten zuhalten, dann spritzt das Wasser oben aus dem Loch.</li>
-            <li>Krippen (<em>presepi</em>) in fast jeder Kirche bis 6.1.</li>
-            <li>Karussell auf der Piazza Navona und an der Piazza della Repubblica.</li>
-            <li>Gelato geht auch im Winter.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="regen">
-      <h2>Regenplan</h2>
-      <div class="card">
-        <p>Bei Dauerregen die lockeren Tage tauschen. Folgende Ziele sind überdacht und liegen kurz voneinander entfernt:</p>
-        <ul>
-          <li><strong>Palazzo Massimo → Santa Maria Maggiore → Santa Prassede</strong> (2.1., funktioniert an jedem Tag außer montags)</li>
-          <li><strong>Explora</strong>-Kindermuseum (vorher buchen; meist montags geschlossen)</li>
-          <li><strong>Pantheon → Sant’Agostino → Palazzo Altemps</strong></li>
-          <li><strong>Centrale Montemartini</strong> + Mittagessen im <strong>Mercato di Testaccio</strong></li>
-          <li>Ostia Antica und Villa Pamphilj im Zweifel verschieben. Der 1.1. und der 3.1. sind dafür am flexibelsten.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="unterwegs">
-      <h2>Unterwegs in Rom</h2>
-      <div class="cards">
-        <div class="card accent-b">
-          <h3>🚏 Ab der Unterkunft</h3>
-          <p>Nächste Haltestelle: <strong>Aurelia Antica/Don Guanella</strong>. Vorher in der Karten-App prüfen, welche Seite und wie weit zu Fuß.</p>
-          <ul>
-            <li><strong>Bus 98 → Zentrum, ohne Umsteigen:</strong> über die Via Gregorio VII nach <em>Cavalleggeri/S. Pietro</em> (Petersdom, ca. 15–20 Min.), weiter über Lungotevere und Corso Vittorio (<em>Navona</em>, ca. 25–30 Min.) Richtung <em>Argentina</em> und Piazza Venezia (<em>Plebiscito</em>, ca. 35–40 Min.).</li>
-            <li><strong>Bus 892 → Metro A:</strong> bis <em>Irnerio</em> (ca. 10–15 Min.) bzw. Endstation <em>Valle Aurelia</em> (Metro A und Zug FL3). Mit der Metro A geht es weiter zu Ottaviano (Vatikan), Flaminio (Piazza del Popolo), Spagna, Repubblica und Termini (Umstieg in die Metro B zum Kolosseum und zur Piramide).</li>
-            <li><strong>Nachtbus N98:</strong> fährt ab Termini über Piazza Venezia, Argentina, Corso Vittorio und S. Pietro bis Don Guanella, ca. alle 40 Min.</li>
-            <li>Laut Fahrplanseiten fährt der 892 werktags ca. alle 20 Min., an Sonn- und Feiertagen nur ca. alle 40–60 Min. Den Takt der 98 und alle aktuellen Zeiten in der App prüfen. Am 1.1. großzügig planen.</li>
-            <li>Ein Taxi ins Zentrum kostet ca. 15–20 € und dauert ca. 15–25 Min. Für 7 Personen braucht man 2 Taxis oder ein Großraumtaxi.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Tickets</h3>
-          <ul>
-            <li>Ein Einzelticket gilt 100 Minuten für Metro, Bus und Tram. Man kann auch direkt mit der Kreditkarte an der Sperre bzw. im Bus kontaktlos zahlen (jede Person braucht eine eigene Karte oder ein eigenes Ticket).</li>
-            <li>Kinder unter 10 Jahren fahren in Begleitung eines Erwachsenen meist kostenlos.</li>
-            <li>Von der Unterkunft aus fahrt ihr fast jeden Tag 2–4 Mal. Zahlen müssen voraussichtlich 5 Personen: die beiden Erwachsenen und die Kinder mit 10, 13 und 16 Jahren. Für sie lohnt sich meist eine <strong>7-Tage-Karte (CIS)</strong> oder 48-/72-Stunden-Tickets. Am Ostia-Tag reicht ein 100-Minuten-Ticket nicht.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Mit Buggy</h3>
-          <ul>
-            <li>Viele Metrostationen haben Aufzüge, aber nicht alle funktionieren immer. Busse und Trams sind oft einfacher.</li>
-            <li>Im Zentrum kommt man zu Fuß meist schneller voran als mit dem Bus.</li>
-            <li>Für Ruinen, Treppen und Kuppel die Trage nehmen.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>🛒 Einkaufen</h3>
-          <ul>
-            <li>Puffer im Plan: <strong>27.12.</strong> Großeinkauf, <strong>31.12.</strong> Vorrat für Neujahr, <strong>2.1.</strong> Bummeln und <em>saldi</em>, <strong>5.1.</strong> Mitbringsel.</li>
-            <li>Supermärkte (Carrefour Express, Conad, Pam, Coop) haben in der Innenstadt oft täglich bis 21 Uhr oder länger geöffnet, manche rund um die Uhr. Am <strong>31.12. schließen sie früher, am 1.1. haben sie meist zu.</strong></li>
-            <li>Windeln, Babymilch und Gläschen gibt es im Supermarkt und in der <em>Farmacia</em> (grünes Kreuz).</li>
-            <li>Mitbringsel mit Flüssigkeiten (Öl, Pesto, Wein) <strong>nur in den großen Koffer</strong>. Das Gewichtslimit für den Koffer beachten.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Essenszeiten</h3>
-          <ul>
-            <li>Mittagessen gibt es ca. 12:30–14:30, Abendessen ab ca. 19:30. Mit Kindern früh kommen oder reservieren.</li>
-            <li>Für zwischendurch: Pizza al taglio, Supplì, Bäckereien (<em>forno</em>).</li>
-            <li>In vielen Restaurants kommt pro Person ein kleiner Gedeck-Betrag (<em>coperto</em>) dazu.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="wrap foot">
-    <p><a href="index.html">← Zurück zu Packlisten &amp; Wetter</a> · Alle Zeiten und Preise sind Richtwerte.</p>
-  </footer>
 
-  <script>
-    (function () {
-      var KEY = "romreise.todo.v1", st = {}, ok = true;
-      try { st = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { ok = false; }
-      if (!ok) document.getElementById("todo-hint").textContent = "Hinweis: Speichern ist in diesem Browser nicht möglich.";
-      var all = document.querySelectorAll("ul.todo input[type=checkbox]");
-      function count() { var b = document.querySelectorAll("#scheine input"), n = 0; b.forEach(function (x) { if (x.checked) n++; }); var c = document.getElementById("scheine-count"); if (c) c.textContent = n + " von " + b.length + " Motiven gesammelt"; }
-      all.forEach(function (cb) {
-        var id = cb.getAttribute("data-id");
-        cb.checked = !!st[id];
-        cb.addEventListener("change", function () {
-          if (cb.checked) st[id] = 1; else delete st[id];
-          try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {}
-          count();
-        });
-      });
-      count();
-    })();
-  </script>
+  <footer class="foot wrap">
+    <span class="hand">Mit Liebe und zu viel Gelato geplant.</span>
+    Familienreise Rom · 27.12.–05.01. · Alle Zeiten, Preise und Öffnungszeiten sind Richtwerte – kurz vorher prüfen.
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>

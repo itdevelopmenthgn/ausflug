@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rom-Packlisten</title>
+  <meta name="description" content="Abhakbare Packlisten für 7 Personen: Handgepäck, Rucksack, großer Familienkoffer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧳%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="logo" href="index.html">🛵 Roma <span>con Bambini</span></a>
+      <nav class="nav" aria-label="Hauptmenü">
+        <a href="index.html">Start</a>
+        <a href="zeitplan.html">Zeitplan</a>
+        <a href="orte.html">Orte</a>
+        <a href="packen.html" aria-current="page">Packen</a>
+        <a href="wetter.html">Wetter & Feiertage</a>
+        <a href="unterwegs.html">Unterwegs</a>
+        <a href="scheine.html">0-€-Scheine</a>
+      </nav>
+    </div>
+  </header>
+  <div class="awning" aria-hidden="true"></div>
+
+
+  <main class="wrap">
+    <div class="hero">
+      <p class="kicker">Tetris für Fortgeschrittene</p>
+      <h1>Packlisten</h1>
+      <p class="lead">Grundlage ist unsere Familien-Packliste „9 Nächte“. Blau markierte Gruppen <strong style="color:var(--tiber)">＋ Vorschlag</strong> sind Dinge, die auf der Liste fehlten, aber wichtig sind.</p>
+    </div>
+
+    <section>
+      <div class="grid">
+        <div class="card terra">
+          <h3>🧳 Handgepäck-Koffer</h3>
+          <p>Nur die <strong>Kleidung</strong>: je 5× Unterhose, Socken, 2× Unterhemd, 5× Pullover, 4× Hose, 1× Stoffhose, Stoffjacke, Schlafanzug. Fürs Kleinkind: Overall, Jacke, Mütze, Booties, Schuhe.</p>
+        </div>
+        <div class="card sun">
+          <h3>🎒 Rucksack</h3>
+          <p>Alles für Flug und Tag: ein Wechsel-Outfit, Snack-Box, Wasser, Kaugummi, Feuchttücher, Tempos, Desinfektion, Hörspiel und Kopfhörer. Für die Kids Malheft, Schleich-Tiere, Autos, Kuscheltier. Fürs Kleinkind dient die <strong>Wickeltasche</strong> als Rucksack.</p>
+        </div>
+        <div class="card pino">
+          <h3>🧳 Großer Koffer</h3>
+          <p>Der ganze Rest: Kulturbeutel, Make-up, Erste-Hilfe-Tasche, Hygiene-Tasche, Pulver und Ergänzungsmittel, Kabeltasche, Töpfchen, Windeln, Fußsack, Schlafsack, Regencape, Brotdosen, Süßes, Tütensuppen. Hier gilt <strong>keine 100-ml-Grenze</strong>.</p>
+        </div>
+      </div>
+
+      <details class="card tiber" style="margin-top:16px">
+        <summary style="cursor:pointer;font-weight:800">✈️ Handgepäck-Regeln (aufklappen)</summary>
+        <ul style="margin-top:10px">
+          <li><strong>Flüssigkeiten</strong> (auch Cremes, Gels, Streichkäse) nur bis 100 ml pro Behälter, zusammen in einem 1-Liter-Zipbeutel pro Person.</li>
+          <li><strong>Babynahrung und Milch</strong> dürfen mehr sein, bei der Kontrolle vorzeigen.</li>
+          <li><strong>Powerbanks nur ins Handgepäck</strong> oder in den Rucksack, niemals in den großen Koffer.</li>
+          <li>Scheren über 6 cm und Taschenmesser gehören in den großen Koffer.</li>
+          <li>Maße und Gewicht der Handgepäck-Koffer bei der Airline nachsehen und zu Hause wiegen.</li>
+          <li>Ob das 1-jährige Kind einen eigenen Koffer mitnehmen darf, regelt jede Airline anders. Vorher prüfen.</li>
+        </ul>
+      </details>
+    </section>
+
+    <aside class="lupa"><span class="ico" aria-hidden="true">🐺</span><div><b>Lupa sagt:</b><p>Profi-Trick einer erfahrenen Wölfin: Jedes Kind packt seinen Rucksack selbst und ihr kontrolliert nur. Spart Nerven – und ihr findet heraus, wie viele Schleich-Tiere in einen Rucksack passen. (Antwort: alle.)</p></div></aside>
+
+    <section id="packlisten">
+      <div class="section-head">
+        <h2>Zum Abhaken</h2>
+        <div class="tools no-print">
+          <button class="btn small" type="button" id="expand-all">Alle auf</button>
+          <button class="btn small" type="button" id="collapse-all">Alle zu</button>
+          <button class="btn small" type="button" id="print-btn">Drucken</button>
+          <button class="btn small danger" type="button" id="reset-all">Zurücksetzen</button>
+        </div>
+      </div>
+      <p class="hint" id="storage-hint">Häkchen werden in diesem Browser gespeichert. Namen lassen sich antippen und ändern.</p>
+      <noscript><p class="infobox">Für die Packlisten bitte JavaScript aktivieren.</p></noscript>
+      <div id="lists"></div>
+    </section>
+  </main>
+
+
+  <footer class="foot wrap">
+    <span class="hand">Mit Liebe und zu viel Gelato geplant.</span>
+    Familienreise Rom · 27.12.–05.01. · Alle Zeiten, Preise und Öffnungszeiten sind Richtwerte – kurz vorher prüfen.
+  </footer>
+  <script src="site.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

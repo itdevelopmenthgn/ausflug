@@ -29,13 +29,13 @@
 
   // ---------- Personen ----------
   var people = [
-    { id: "e1",  name: "Erwachsener 1", age: null, role: "adult", emoji: "🧑" },
-    { id: "e2",  name: "Erwachsener 2", age: null, role: "adult", emoji: "🧑" },
-    { id: "k16", name: "Kind (16 J.)",  age: 16, role: "teen",  emoji: "🧑‍🎓" },
-    { id: "k13", name: "Kind (13 J.)",  age: 13, role: "teen",  emoji: "🧒" },
-    { id: "k10", name: "Kind (10 J.)",  age: 10, role: "kid",   emoji: "🧒" },
-    { id: "k7",  name: "Kind (7 J.)",   age: 7,  role: "kid",   emoji: "🧒" },
-    { id: "k1",  name: "Kleinkind (1 J.)", age: 1, role: "baby", emoji: "👶" }
+    { id: "e1",  name: "Papa", age: null, role: "adult", emoji: "👨" },
+    { id: "e2",  name: "Mama", age: null, role: "adult", emoji: "👩" },
+    { id: "k16", name: "Samuel",  age: 16, role: "teen",  emoji: "🧑" },
+    { id: "k13", name: "Elana",  age: 13, role: "teen",  emoji: "👧" },
+    { id: "k10", name: "Benjamin",  age: 10, role: "kid",   emoji: "👦" },
+    { id: "k7",  name: "Amelia",   age: 7,  role: "kid",   emoji: "👧" },
+    { id: "k1",  name: "Liora", age: 1, role: "baby", emoji: "👶" }
   ];
   function nameOf(p) { return state.names[p.id] || p.name; }
   function ageLabel(p) { return p.age === null ? "Erwachsen" : p.age + " " + (p.age === 1 ? "Jahr" : "Jahre"); }
@@ -102,7 +102,7 @@
       ["5× Unterhose", "9 Nächte → einmal waschen (Waschmittel im großen Koffer)"],
       "Socken",
       "2× Unterhemd",
-      p.id === "e2" ? ["6× Still-BH", "für die stillende Person"] : null,
+      p.id === "e2" ? "6× Still-BH" : null,
       "5× Pullover",
       "4× Hose",
       "1× Stoffhose",
@@ -373,14 +373,4 @@
     save();
   });
 
-  // Beim Drucken alle Listen aufklappen, danach Zustand wiederherstellen
-  var openBefore = null;
-  window.addEventListener("beforeprint", function () {
-    openBefore = registry.map(function (r) { return r.details.open; });
-    setAll(true);
-  });
-  window.addEventListener("afterprint", function () {
-    if (openBefore) registry.forEach(function (r, i) { r.details.open = openBefore[i]; });
-    openBefore = null;
-  });
 })();
