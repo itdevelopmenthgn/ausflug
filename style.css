@@ -359,3 +359,13 @@ section:target, li:target, h3:target, .card:target { background: var(--sun-soft)
 .daylist li:last-child { border-bottom: 0; }
 .daylist .gm { font-size: .78rem; white-space: nowrap; }
 @media print { .map, .map-tools { display: none; } }
+
+/* Tageskarten */
+.daymap-wrap { margin: 10px 0; }
+.daymap { height: 300px; border-radius: 14px; border: 1px solid var(--line); z-index: 0; background: var(--tiber-soft); }
+@media (min-width: 760px) { .daymap { height: 380px; } }
+.daymap-wrap figcaption { margin-top: 6px; }
+.pin.stop { border-radius: 9px; }
+.pin.num-pin { width: auto; min-width: 34px; padding: 0 6px 0 3px; border-radius: 999px; gap: 2px; display: inline-flex; align-items: center; font-size: 15px; }
+.pin .num { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--c); color: #fff; font: 800 12px var(--f-body); }
+@media print { .daymap-wrap { display: none; } }
