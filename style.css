@@ -343,3 +343,19 @@ details.plist[open] > summary::after { transform: rotate(45deg); }
 .timeline a.pl:hover { color: var(--terra); }
 [id] { scroll-margin-top: 90px; }
 section:target, li:target, h3:target, .card:target { background: var(--sun-soft); border-radius: 12px; box-shadow: 0 0 0 6px var(--sun-soft); }
+
+/* Karte */
+.map { height: min(65vh, 560px); border-radius: var(--radius); border: 1px solid var(--line); box-shadow: var(--shadow); margin: 12px 0 6px; z-index: 0; background: var(--tiber-soft); }
+.map-tools { display: flex; flex-wrap: wrap; gap: 6px; }
+.map-tools .btn[aria-pressed="true"] { background: var(--ink); color: #fff; }
+.dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; background: var(--c, var(--terra)); margin-right: 4px; flex: none; }
+.pin-wrap { background: none; border: 0; }
+.pin { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #fff; border: 3px solid var(--c); font-size: 17px; box-shadow: 0 2px 6px rgba(0,0,0,.3); }
+.leaflet-popup-content { font: 15px/1.45 var(--f-body); }
+.daylist { border-top: 5px solid var(--c); }
+.daylist h3 { display: flex; align-items: center; font-size: 1.05rem; }
+.daylist ul { list-style: none; padding: 0; margin: 0; }
+.daylist li { display: grid; grid-template-columns: 1.6em 1fr auto; gap: 8px; align-items: baseline; padding: 6px 0; margin: 0; border-bottom: 1px dashed var(--line); }
+.daylist li:last-child { border-bottom: 0; }
+.daylist .gm { font-size: .78rem; white-space: nowrap; }
+@media print { .map, .map-tools { display: none; } }
